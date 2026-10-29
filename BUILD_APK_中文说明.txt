@@ -1,0 +1,13 @@
+DSB-Xposed APK 云端构建说明
+
+当前压缩包是 Android 项目源码，不是已编译 APK。运行环境缺少 Android SDK/Gradle，因此没有生成虚假的 APK 文件。
+
+推荐：使用 GitHub Actions 云端构建
+1. 在 GitHub 创建一个空仓库。
+2. 将本压缩包解压，把里面的全部文件复制到仓库根目录；务必保留隐藏目录 .github 及其中的 workflows/build.yml。不要只上传 ZIP 文件。
+3. 提交并推送后，打开仓库的 Actions 页面，进入 build-apk 工作流运行记录。
+4. 运行成功后，在页面底部 Artifacts 下载 DSB-Xposed-apk，解压后可得到 APK。
+
+也可以在装有 Android Studio、JDK 17 和 Android SDK Platform 36 的电脑上打开项目，然后选择 Build > Build APK(s)。
+
+注意：构建成功不代表已在你的手机、LSPosed 版本或迪速帮版本上实测。安装前请备份原模块；APK 使用项目配置的 debug 签名，不能保证与已安装的同 applicationId APK 覆盖安装。

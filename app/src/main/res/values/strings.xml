@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSB悬浮抢单</string>
+    <string name="xposed_description">迪速帮骑手端悬浮抢单：按楼栋+楼层，共用宿主登录态不顶号</string>
+</resources>
